@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>Acquisition_Type</web>
+  <name>Acquisition_TypeTranslations</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>Acquisition_TypeClass</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.TranslationDocumentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>1</number>
+        <prettyName>Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>GLOBAL|WIKI|USER|ON_DEMAND</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <name>Acquisition_Type.Acquisition_TypeTranslations</name>
+    <number>0</number>
+    <className>XWiki.TranslationDocumentClass</className>
+    <guid>ed42baf9-f89a-48eb-9046-8b481c650a40</guid>
+    <property>
+      <scope>ON_DEMAND</scope>
+    </property>
+  </object>
+  <content># Class fields
+Acquisition_Type.Acquisition_TypeClass_label=label
+
+# Live table generic keys
+acquisition_type.livetable.doc.title=Titre de la page
+acquisition_type.livetable.doc.name=Nom de la page
+acquisition_type.livetable.doc.space=Espace
+acquisition_type.livetable.doc.fullname=Nom complet de la page
+acquisition_type.livetable.doc.author=Dernier auteur
+acquisition_type.livetable.doc.creator=Créateur
+acquisition_type.livetable.doc.date=Date de dernière mise à jour
+acquisition_type.livetable.doc.creationDate=Date de création
+acquisition_type.livetable._avatar=Avatar
+acquisition_type.livetable._images=Images
+acquisition_type.livetable._attachments=Pièces jointes
+acquisition_type.livetable._actions=Actions
+acquisition_type.livetable._actions.edit=Modifier
+acquisition_type.livetable._actions.delete=Supprimer
+acquisition_type.livetable.emptyvalue=-
+
+# Live table specific keys
+acquisition_type.livetable.label=label</content>
+</xwikidoc>
