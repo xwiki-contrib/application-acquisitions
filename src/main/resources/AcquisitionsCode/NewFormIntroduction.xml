@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>AcquisitionsCode</web>
+  <name>NewFormIntroduction</name>
+  <language/>
+  <defaultLanguage>en</defaultLanguage>
+  <translation>0</translation>
+  <parent>WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title/>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <content>This forms allows you to request a new material. Once completed your request will be reviewed and we will get back to you.
+
+
+Make sure to describe your need and eventual vendor and url of web site to speed up the acquisition process.</content>
+</xwikidoc>

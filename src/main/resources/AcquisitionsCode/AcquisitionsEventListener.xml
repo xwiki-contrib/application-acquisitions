@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xwikidoc>
+  <web>AcquisitionsCode</web>
+  <name>AcquisitionsEventListener</name>
+  <language/>
+  <defaultLanguage/>
+  <translation>0</translation>
+  <parent>WebHome</parent>
+  <creator>xwiki:XWiki.Admin</creator>
+  <author>xwiki:XWiki.Admin</author>
+  <customClass/>
+  <contentAuthor>xwiki:XWiki.Admin</contentAuthor>
+  <creationDate>1420066800000</creationDate>
+  <date>1420066800000</date>
+  <contentUpdateDate>1420066800000</contentUpdateDate>
+  <version>1.1</version>
+  <title>New Acquisitions Event Listener</title>
+  <defaultTemplate/>
+  <validationScript/>
+  <comment/>
+  <minorEdit>false</minorEdit>
+  <syntaxId>xwiki/2.1</syntaxId>
+  <hidden>true</hidden>
+  <object>
+    <class>
+      <name>XWiki.ComponentClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <roleHint>
+        <disabled>0</disabled>
+        <name>roleHint</name>
+        <number>2</number>
+        <prettyName>Component Role Hint</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </roleHint>
+      <roleType>
+        <disabled>0</disabled>
+        <name>roleType</name>
+        <number>1</number>
+        <prettyName>Component Role Type</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </roleType>
+      <scope>
+        <cache>0</cache>
+        <disabled>0</disabled>
+        <displayType>select</displayType>
+        <multiSelect>0</multiSelect>
+        <name>scope</name>
+        <number>3</number>
+        <prettyName>Component Scope</prettyName>
+        <relationalStorage>0</relationalStorage>
+        <separator> </separator>
+        <separators> ,|</separators>
+        <size>1</size>
+        <unmodifiable>0</unmodifiable>
+        <values>wiki=Current Wiki|user=Current User|global=Global</values>
+        <classType>com.xpn.xwiki.objects.classes.StaticListClass</classType>
+      </scope>
+    </class>
+    <name>AcquisitionsCode.AcquisitionsEventListener</name>
+    <number>0</number>
+    <className>XWiki.ComponentClass</className>
+    <guid>17827045-39ff-483e-a528-7324bc2381c9</guid>
+    <property>
+      <roleHint>acquisitions</roleHint>
+    </property>
+    <property>
+      <roleType>org.xwiki.observation.EventListener</roleType>
+    </property>
+    <property>
+      <scope>wiki</scope>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.ComponentMethodClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Method body code</prettyName>
+        <rows>20</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Method name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+    </class>
+    <name>AcquisitionsCode.AcquisitionsEventListener</name>
+    <number>0</number>
+    <className>XWiki.ComponentMethodClass</className>
+    <guid>e6eee42f-e5a2-4745-ba27-b711a5ac0e61</guid>
+    <property>
+      <code>{{groovy}}
+import org.xwiki.bridge.event.*
+
+xcontext.method.output.value = [new DocumentCreatingEvent(), new DocumentUpdatingEvent()]
+{{/groovy}}</code>
+    </property>
+    <property>
+      <name>getEvents</name>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.ComponentMethodClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Method body code</prettyName>
+        <rows>20</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Method name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+    </class>
+    <name>AcquisitionsCode.AcquisitionsEventListener</name>
+    <number>1</number>
+    <className>XWiki.ComponentMethodClass</className>
+    <guid>01adf5ea-3a9d-408c-b505-1fdbaaad41d0</guid>
+    <property>
+      <code>{{groovy}}
+xcontext.method.output.value = "acquisitions"
+{{/groovy}}</code>
+    </property>
+    <property>
+      <name>getName</name>
+    </property>
+  </object>
+  <object>
+    <class>
+      <name>XWiki.ComponentMethodClass</name>
+      <customClass/>
+      <customMapping/>
+      <defaultViewSheet/>
+      <defaultEditSheet/>
+      <defaultWeb/>
+      <nameField/>
+      <validationScript/>
+      <code>
+        <disabled>0</disabled>
+        <name>code</name>
+        <number>2</number>
+        <prettyName>Method body code</prettyName>
+        <rows>20</rows>
+        <size>40</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.TextAreaClass</classType>
+      </code>
+      <name>
+        <disabled>0</disabled>
+        <name>name</name>
+        <number>1</number>
+        <prettyName>Method name</prettyName>
+        <size>30</size>
+        <unmodifiable>0</unmodifiable>
+        <classType>com.xpn.xwiki.objects.classes.StringClass</classType>
+      </name>
+    </class>
+    <name>AcquisitionsCode.AcquisitionsEventListener</name>
+    <number>2</number>
+    <className>XWiki.ComponentMethodClass</className>
+    <guid>b5126388-8868-4184-9fd6-9b8ecce49d9f</guid>
+    <property>
+      <code>{{groovy}}
+System.out.println("ACQUISITIONS NOTIFICATION MAIL START"); 
+try {
+ def docSource = xcontext.method.input.get(1)
+ if (docSource.space == "Acquisitions") {
+   System.out.println("ACQUISITIONS NOTIFICATION MAIL PREPARE"); 
+   def configDoc = xwiki.getDocument("AcquisitionsCode.Configuration")
+   def cc = configDoc.getValue("cc");
+   def language = configDoc.getValue("language");
+   if (language==null || language=="")
+    language = "en";
+  def templateReference = services.model.createDocumentReference('', 'AcquisitionsCode', 'NotificationMailTemplate')
+   def mailParameters = {'from' : cc, 'to' : cc, 'language' : language, 'velocityVariables' : { 'var1' : 'value1' }}
+  /* def msg = services.mailsender.createMessage('template', templateReference, mailParameters)
+   System.out.println("ACQUISITIONS NOTIFICATION MAIL SEND"); 
+   services.mailsender.send(msg);
+*/
+ }
+} catch (Exception e) {
+   System.out.println("ACQUISITIONS NOTIFICATION MAIL FAIL");
+   e.printStrackTrace();
+}
+System.out.println("ACQUISITIONS NOTIFICATION MAIL END"); 
+{{/groovy}}</code>
+    </property>
+    <property>
+      <name>onEvent</name>
+    </property>
+  </object>
+  <content/>
+</xwikidoc>
